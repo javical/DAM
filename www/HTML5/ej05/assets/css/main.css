@@ -1,0 +1,21 @@
+.wrapper{
+    width:95%;
+}
+
+video{
+    width:100%;
+
+}
+
+.vcontrols .col-xs-8 {
+    padding: 0;
+}
+
+#Volumen{
+    width: 10%;
+    display: inline;
+}
+
+#Progreso{
+    width: 100%;
+}

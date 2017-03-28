@@ -1,0 +1,178 @@
+/* --------------------------------
+Site:       Site name
+CSS author: Your name here
+Updated:    Date
+Updated by: Your name here
+-------------------------------- */
+
+/* ----------------------------
+simple reset
+---------------------------- */
+
+html, body, ul, ol, li, form, fieldset, legend
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+fieldset,img { border: 0; }
+legend { color: #000; }
+li { list-style: none; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td
+{
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+input, textarea, select
+{
+    font-size: 110%;
+    line-height: 1.1;
+}
+
+abbr, acronym
+{
+    border-bottom: .1em dotted;
+    cursor: help;
+}
+
+body
+{
+    color: #000;
+    background: radial-gradient(#fff, #eee);
+    font: 90%/1.3 "DejaVu Sans", "URW Gothic L", "Helvetica Neue", Helvetica, Arial, "Microsoft Sans Serif", sans-serif;
+    padding-top: 45px;
+}
+
+.header{
+    background-color: #FFF;
+    border-bottom: 1px solid #FFF;
+    box-shadow:0 -5px 15px 0px #000;
+    color:#000;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 40px;
+
+}
+
+.header h1{
+    margin:0;
+    text-align: center;
+    font-size: 1em;
+}
+.container
+{
+    padding:10px;
+}
+
+.nav, .content, .extras {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    padding: 0.5em;
+}
+
+.nav
+{
+    margin-bottom: 1em;
+}
+
+.content
+{
+    margin:1em 0;
+}
+
+.feature-image
+{
+    display:none;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+
+@media (min-width:768px){
+
+    body{
+        padding-top:0px;
+    }
+
+    .header{
+        background-color: transparent;
+        position:static;
+        width:100%;
+        height: auto;
+        border-bottom:none;
+        box-shadow: none;
+    }
+
+    .header h1{
+        margin:0.5em 0;
+        text-align: left;
+        font-size:2em;
+    }
+
+    .nav.fleft {
+        float:left;
+        width: 20%;
+    }
+
+    .col-dcha{
+        float: right;
+        width: 75%;
+        margin-left 2%;
+    }
+
+    .content{
+        margin-top:0;
+    }
+    .feature-image{
+        display: block;
+        float: right;
+    }
+
+    .nav li{
+        display: block;
+    }
+}
+
+@media (min-width:992px){ 
+    .content{
+        float:left;
+        width:60%;
+    }
+    .extras{
+        float:right;
+        width:30%;
+        padding-left: 2.6%;
+    }
+}
+
+/*@media (min-width:1600px){
+    body{
+        font-size: 28px;
+    }
+
+    .container{
+        max-width: 1600px;
+    }
+}*/
+
+/*añadido para poder navegar por los ejercicios*/
+.volver{
+    position: fixed;
+    bottom:0;
+}

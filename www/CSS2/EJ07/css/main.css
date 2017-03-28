@@ -1,0 +1,243 @@
+*{box-sizing: border-box;}
+
+body {
+    font: 400 12pt/1.6em Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+ul, h1 { 
+    margin: 0; 
+    padding: 0;}
+
+ul, ol {
+    list-style: none;
+}
+
+a, 
+a:visited, 
+a:link, 
+a:active{
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+}
+
+.fleft{
+    float: left;
+}
+
+.fright{
+    float: right;
+}
+.header{
+    background-color: #000;
+    color: #FFF;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+.header p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 960px;
+}
+
+.header a,
+.header a:visited,
+.header a:link,
+.header a:active {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.menu li{
+    display: inline;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+}
+
+.menu{
+    text-transform: lowercase;
+}
+
+.article{
+    margin:25 px 0;
+}
+
+h1, .h1{
+    font-size: 
+}
+h2, .h2{
+    display: block;
+    color: #000;
+    font-size: 1.1em;
+}
+
+.article .h2{
+    margin-bottom: 0.2em;
+    margin-top:1.6em;
+}
+
+.article .h2 a,
+.article .h2 a:visited,
+.article .h2 a:link,
+.article .h2 a:active{
+    color: #000;
+    border-color: #000;
+}
+
+.article a, 
+.article a:visited,
+.article a:link,
+.article a:active{
+    color:#00E;
+    border-color:#00E;
+}
+
+.article p{
+    margin-top: 2em;
+}
+.strong{
+    font-weight: bold;
+}
+
+.archive .day{
+    display: inline-block;
+    width: 20px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.archive a,
+.archive a:visited,
+.archive a:link,
+.archive a:active{
+    color: #00E;
+    border-color: #00E;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer a,
+.footer a:visited,
+.footer a:link,
+.footer a:active{
+    color: #00E;
+    border-color:#00E;
+}
+
+.form input,
+.form textarea{
+    border:1px solid #CCC;
+    padding: 5px;
+    width: 50%
+}
+
+.form-rows label, 
+.form-roms input, 
+.form-roms textarea{
+    display: block;
+    margin: 5px 0;
+}
+
+.form-row{
+    margin-bottom: 10px;
+}
+
+.form-inline label{
+    display: inline-block;
+    width: 30%;
+}
+
+.form-inline input{
+    display: inline-block;
+}
+
+h3, .h3{
+    display: block;
+    font-size: 1.1em;
+    border-bottom: 2px dashed #CCC;
+    margin-top:2em;
+}
+
+.userimage{
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+
+.comment .content{
+    width: 90%;
+}
+
+.comment .avatar{
+    width: 10%;
+}
+.comment{
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+}
+
+.new_comment{
+    margin-bottom: 25px;
+}
+
+.img-responsive{
+    max-width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.tabla{
+    border: 3px solid #CCC;
+}
+
+.tabla tr, 
+.tabla td{
+     padding: 3px 5px;
+}
+
+thead, tfoot{
+    background-color: #CCC;
+}
+
+.tabla tr{
+    border-bottom: 1px solid #CCC;
+}
+
+.tabla thead {
+    text-align: left;
+}
+
+.tabla tfoot{
+    font-weight: bold;
+}
+.txtright{
+    text-align: right;
+}
+
+.tabla .price-th{
+    width: 75px;
+}
+
+
+/*añadido para poder navegar por los ejercicios*/
+.volver{
+    position: fixed;
+    bottom:0;
+}

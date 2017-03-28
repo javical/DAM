@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="todoApp">
+<!-- ng-app debe llevar asociado el controlador que definamos nosotros -->
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de ToDo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/js/vendor/angular.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="h2">ToDo List</h1>
+        <div class="well" ng-controller="TodoController">
+
+            <!--div ng-controller="TodoController">
+            <span>{{remaining()}} of {{todos.length}} remaining</span>
+              [ <a href="" ng-click="archive()">archive</a> ]
+              <ul class="unstyled">
+                <li ng-repeat="todo in todos">
+                  <input type="checkbox" ng-model="todo.done">
+                  <span class="done-{{todo.done}}">{{todo.text}}</span>
+                </li>
+              </ul>
+              <form ng-submit="addTodo()">
+                <input type="text" ng-model="todoText"  size="30"
+                       placeholder="add new todo here">
+                <input class="btn-primary" type="submit" value="add">
+              </form>
+            </div-->
+            
+            <form action="#" class="form-inline" ng-submit="addTodo()">
+                <div class="form-group">
+                    <input type="text" class="form control" size="40" ng-model="inputText">
+                    <button type="submit" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </div>
+            </form>
+
+            <ul class="list-unstyled">
+                <li ng-repeat="todo in todos"><input type="checkbox" ng-model="todo.done"><span>{{ todo.task }}</span></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="volver">
+        <a href="../index.html">Volver</a>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

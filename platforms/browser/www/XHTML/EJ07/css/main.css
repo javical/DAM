@@ -1,0 +1,25 @@
+/*-- Básico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*--clear de floats*/
+.clearfix:before, .clearfix:after{
+    content:"";
+    display: table;
+}
+
+.clearfix:after{
+    clear:both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*añadido para poder navegar por los ejercicios*/
+.volver{
+    position: fixed;
+    bottom:0;
+}

@@ -1,0 +1,59 @@
+/*-- Básico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*--clear de floats*/
+.clearfix:before, .clearfix:after{
+    content:"";
+    display: table;
+}
+
+.clearfix:after{
+    clear:both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*Aqui ya los estilos de nuestra página*/
+.fleft{
+    float: left;
+}
+
+.fright{
+    float: right;
+}
+
+.container{
+    border: 1px solid gray;
+    background-color: #CCC;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.container span{
+    border: 1px solid #000;
+}
+
+.origin{
+    position:relative;
+}
+
+.box{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.body{
+    background-color: #c9c9c9;
+}
+
+/*añadido para poder navegar por los ejercicios*/
+.volver{
+    position: fixed;
+    bottom:0;
+}

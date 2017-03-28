@@ -1,0 +1,17 @@
+# install NodeJs on ubuntu
+sudo apt-get update
+sudo apt-get install nodejs
+
+#Install npm package manager
+sudo apt-get install npm
+
+#Check if node and npm are correctly installed
+nodejs -v #v0.10.25
+nmp -v #1.3.10
+
+#install CSS and Js linterns
+#npm install csslint
+npm install jshint
+
+#active nodejs en ubuntu (solo pasa en ubuntu)
+sudo ln -s /usr/bin/nodejs /usr/bin/node

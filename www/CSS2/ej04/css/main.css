@@ -1,0 +1,49 @@
+/*-- Básico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*--clear de floats*/
+.clearfix:before, .clearfix:after{
+    content:"";
+    display: table;
+}
+
+.clearfix:after{
+    clear:both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*añadido para poder navegar por los ejercicios*/
+.volver{
+    position: fixed;
+    bottom:0;
+}
+
+/*Empezamos con los menus*/
+
+.menu > li{
+    position: relative;
+    float: left;
+    border:1px solid #eee;
+    padding: 5px 10px;
+    font-style: italic;
+
+}
+
+.submenu{
+    position: absolute;
+    top: 100%; 
+    left: -1px;
+    border: 1px solid #ccc;
+    display: none;
+    width: 200%;
+}
+
+.menu > li:hover .submenu{
+    display: block;
+};
